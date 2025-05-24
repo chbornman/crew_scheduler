@@ -1,0 +1,45 @@
+/* Custom styles for the react-scheduler - Force height constraints */
+
+/* Main scheduler container */
+.root__sc-154p8u2-0,
+.gRhheV,
+.root-wrapper {
+  height: 600px !important;
+  max-height: 600px !important;
+  overflow: hidden !important;
+}
+
+/* Scheduler wrapper */
+.sc-jXbUNg,
+.kYvFDP,
+.wrapper__sc-aqvbsn-1 {
+  height: 100% !important;
+  max-height: 600px !important;
+  overflow: hidden !important;
+}
+
+/* Content area */
+.sc-dlVxhl,
+.jqrPXT,
+.content__sc-18q46ui-0 {
+  height: calc(100% - 100px) !important;
+  max-height: 500px !important;
+  overflow: auto !important;
+}
+
+/* Ensure the scheduler doesn't expand beyond container */
+[data-testid="scheduler-wrapper"] {
+  max-height: 600px !important;
+  overflow: hidden !important;
+}
+
+/* Timeline container */
+.timeline__sc-1u0n2r0-0 {
+  height: 100% !important;
+  overflow: auto !important;
+}
+
+/* Prevent any element from breaking out */
+.scheduler-container > * {
+  max-height: 600px !important;
+}
