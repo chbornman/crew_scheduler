@@ -98,7 +98,7 @@ export default function CrewScheduler() {
           onClearFilterData={handleClearFilterData}
           config={{
             filterButtonState: filterButtonState,
-            zoom: 0, // Start with weeks view to see more data
+            zoom: 1, // Start with day view
             lang: "en",
             maxRecordsPerPage: 5, // Reduce to fit better in 600px
             includeTakenHoursOnWeekendsInDayView: false,
